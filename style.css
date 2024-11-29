@@ -1,0 +1,115 @@
+/* Reset de estilos para remover margens e padding padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração geral do corpo */
+body {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    min-height: 100vh;      /* Altura mínima igual à tela */
+    background-color: #f4f4f4;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    width: 100%;             /* Ocupa toda a largura */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Espaço entre o título e os links */
+    align-items: center;
+}
+
+/* Estilo do título */
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Estilo da navegação */
+nav {
+    display: flex;            /* Links em linha */
+    gap: 15px;                /* Espaço entre os links */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Configuração da seção principal */
+main {
+    flex: 1;                 /* Permite que o conteúdo cresça e ocupe espaço entre o header e o footer */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    padding: 20px;
+}
+
+/* Configuração da lista de produtos */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os produtos */
+    gap: 20px;               /* Espaçamento entre os produtos */
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product p {
+    font-weight: bold;
+    color: #e63946;
+}
+
+.product button {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #264653;
+}
+
+/* Configuração do rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%;             /* Ocupa toda a largura */
+    margin-top: auto;        /* Empurra o rodapé para o final da página */
+}
